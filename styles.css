@@ -1,45 +1,33 @@
 * {
-  max-width: 700px;
+  font-family: Arial, sans-serif;
   margin: auto;
 }
-
-
-/*body {
-    min-width: 500px;
-}*/
 
 div {
   border-radius: 5px;
 }
 
 h1 {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
+   font-size: 18px;
   text-align: center;
 }
 
 #header {
-  height: 40px;
+  height: 45px;
   width: 100%;
   background-color: #ffcccc;
   position: fixed;
   z-index: 1;
 }
 
-#title {
-  margin-left: 3%;
-}
 
-#footer {
-  height: 50px;
-  width: 100%;
-  background-color: #ffcccc;
-  clear: both;
-  position: relative;
+.flush_right {
+  float: right;
+  margin-right: 10px;
 }
 
 .left {
-  height: 1000px;
+  height: 2000px;
   width: 45px;
   background-color: #e0eeee;
   float: left;
@@ -47,7 +35,7 @@ h1 {
 }
 
 .right {
-  height: 1000px;
+  height: 2000px;
   width: 45px;
   background-color: #e0eeee;
   float: right;
@@ -57,30 +45,28 @@ h1 {
 .stuff {
   display: inline-block;
   margin-top: 6px;
-  margin-left: 55px;
-  width: 75%;
-  height: 1000px;
-}
-
-p,
-li {
-  font-family: 'Cormorant Garamond';
+  margin-left: 100px;
+  width: 70%;
+  height: auto;
 }
 
 .head {
-  font-size: 13px;
+  font-weight: bold;
 }
 
-#name {
-  font-family: Sacramento;
-  float: right;
-  margin-top: 10px;
-  margin-right: 4%;
+.list {
+   text-align: justify;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+.references-table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+th {
+
+  text-align: left;
 }
 
 @media only screen and (max-width: 430px) {
@@ -88,8 +74,13 @@ a {
   .right {
     display: none;
   }
-  .stuff {
-    width: 100%;
-    margin-left: 10px;
-  }
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #ffcccc;
+  clear: both;
+  position: fixed;
+  bottom: 0;
 }
